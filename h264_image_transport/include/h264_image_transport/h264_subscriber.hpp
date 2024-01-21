@@ -70,7 +70,7 @@ protected:
     rclcpp::Node * node,
     const std::string &,
     const Callback &,
-    rmw_qos_profile_t) override
+    rmw_qos_profile_t)
   {
     RCLCPP_FATAL(node->get_logger(), "not used in Humble+");
   }
@@ -80,7 +80,7 @@ protected:
     const std::string & base_topic,
     const Callback & callback,
     rmw_qos_profile_t custom_qos,
-    rclcpp::SubscriptionOptions options) override;
+    rclcpp::SubscriptionOptions options) ;
 
 public:
   H264Subscriber();
